@@ -1,0 +1,66 @@
+<html>
+    <head>
+        <style>
+            #loginTable{
+                background-color:rgb(204, 204, 204);;
+                border-width: 25pt;
+                border-color: blue;
+                padding: 15px;
+            }
+            input tr, td{
+                width: 50%;
+                padding: 3px;
+                border: 2px solid yellowgreen; 
+                resize: vertical;
+                background-color:darkgray;
+            }
+            label{
+                font-family: 'Courier New', Courier, monospace;
+                color: blue;
+                font-size: 15px;
+                font-weight: bold;
+                
+            }
+            input{
+                color: blue;
+                
+            }
+            input :hover{
+                color: crimson;
+            }
+            a{
+                color: brown;
+            }
+        </style>
+    </head>
+    <body>
+        <form align="center" id="loginForm" >
+           <table id="loginTable" align="center">
+                <thead align="center">
+                    <tr>
+                        <h2><label>Login Form</label></h2>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><label>Enter Username: </label></td>
+                        <td><input type="text" name="uName" id="uName"></td>
+                    </tr>
+                    <tr>
+                        <td><label>Enter Password: </label></td>
+                        <td><input type="password" name="pswd" id="regpswd"></td>
+                    </tr>
+                    <tr>
+                        <td><label>If new user <a href="reg.html">Click</a> here </label>  </td>
+                        <td><input type="submit" value="Login"></td>
+
+                    </tr>
+                    <tr>
+                        <td><input type="reset" value="Cancel"></td>
+                        <td><input type="button" value="Button" id="loginButton"></td>
+                    </tr>
+                </tbody>
+           </table>
+        </form>
+    </body>
+</html>
